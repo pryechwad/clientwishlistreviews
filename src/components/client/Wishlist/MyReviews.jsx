@@ -1,19 +1,18 @@
+// src/pages/MyReviews.jsx
 import React from "react";
-import MyReviews from "../components/MyReviews";
+import { mockReviews } from "../data/mockReviews";
+import ReviewCard from "../components/ReviewCard";
 
-const UserDashboard = () => {
-  // Example reviews data (replace with actual data from your backend or state)
-  const reviews = [
-    { id: 1, productName: "Product 1", rating: 5, comment: "Great product!" },
-    { id: 2, productName: "Product 2", rating: 4, comment: "Good value for money." },
-  ];
 
+const MyReviews = () => {
   return (
-    <div className="user-dashboard">
-      <h2>User Dashboard</h2>
-      <MyReviews reviews={reviews} />
-    </div>
+    <DashboardLayout>
+      <h2 className="text-2xl font-bold mb-4 text-[#00796b]">My Reviews</h2>
+      {mockReviews.map((review) => (
+        <ReviewCard key={review.id} review={review} />
+      ))}
+    </DashboardLayout>
   );
 };
 
-export default UserDashboard;
+export default MyReviews;

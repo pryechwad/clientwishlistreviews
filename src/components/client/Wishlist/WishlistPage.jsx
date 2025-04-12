@@ -4,14 +4,14 @@ import StarInput from "../Review/StarInput";
 const products = [
   {
     id: 1,
-    name: "Product 1",
+    name: "Smartphone",
     price: "₹50000",
     vendor: "Vendor A",
     image: "/public/product1.png",
   },
   {
     id: 2,
-    name: "Product 2",
+    name: "Hand Purse",
     price: "₹350",
     vendor: "Vendor B",
     image: "/public/product2.png",

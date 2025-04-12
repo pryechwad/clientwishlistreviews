@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getSavedReviews } from "../../utils/localStorage";
+import { getSavedReviews } from "../../utils/formatDate";
 
 const MyReviewsPage = () => {
   const [reviews, setReviews] = useState([]);
