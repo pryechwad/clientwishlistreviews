@@ -2,21 +2,38 @@ import React, { useState } from "react";
 import StarInput from "../Review/StarInput";
 
 const products = [
-  {
-    id: 1,
-    name: "Smartphone",
-    price: "₹50000",
-    vendor: "Vendor A",
-    image: "/public/product1.png",
-  },
-  {
-    id: 2,
-    name: "Hand Purse",
-    price: "₹350",
-    vendor: "Vendor B",
-    image: "/public/product2.png",
-  },
-];
+ 
+    {
+      id: 1,
+      name: "Smartphone",
+      price: "₹50000",
+      vendor: "Vendor A",
+      image: "/public/product1.png",
+    },
+    {
+      id: 2,
+      name: "Hand Purse",
+      price: "₹350",
+      vendor: "Vendor B",
+      image: "/public/product2.png",
+    },
+    {
+      id: 3,
+      name: "Laptop",
+      price: "₹50000",
+      vendor: "Vendor C",
+      image: "/public/Product3.png",
+    },
+    {
+      id: 4,
+      name: "Headphone",
+      price: "₹1299",
+      vendor: "Vendor A",
+      image: "/public/product4.png",
+    },
+  ];
+  
+
 
 const WishlistPage = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
