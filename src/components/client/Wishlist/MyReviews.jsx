@@ -1,4 +1,3 @@
-// src/pages/MyReviews.jsx
 import React from "react";
 import { mockReviews } from "../data/mockReviews";
 import ReviewCard from "../components/ReviewCard";
